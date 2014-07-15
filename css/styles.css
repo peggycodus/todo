@@ -3,7 +3,7 @@
   color: #0088cc;
 }
 
-#lists:hover {
+li:hover {
   text-decoration: underline;
 }
 

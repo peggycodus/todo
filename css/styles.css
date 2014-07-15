@@ -1,31 +1,9 @@
-.contact-list{
-  display:none;
+#lists {
+  cursor:pointer;
+  color: #0088cc;
 }
 
-#contactDetails {
-  display: none;
-}
-
-#contact-name {
-  color: blue;
+#lists:hover {
   text-decoration: underline;
 }
 
-hr{
-  background-color: #eee;
-    border: 0 none;
-    color: #eee;
-    height: 2px;
-}
-
-.required {
-  color: red;
-}
-
-#phoneEmail{
-  display:none;
-}
-
-form#extraInfo {
-  display: none;
-}

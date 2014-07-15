@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Address Book</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Address Book</h1>
+      <hr />
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Please enter a contact:</h2>
+
+          <form id="new-contact-form">
+            <div class="form-group">
+              <label for="new-first-name">First Name:<span class="required">*</span></label>
+              <input class="form-control" id="new-first-name" type="text"></input>
+            </div>
+            <div class="form-group">
+              <label for="new-last-name">Last Name:<span class="required">*</span></label>
+              <input class="form-control" id="new-last-name" type="text"></input>
+            </div>
+
+            <div id="new-addresses">
+              <div class="new-address">
+                <div class="form-group">
+                  <label for="new-street">Street: </label>
+                  <input class="form-control new-street" type="text" placeholder ="Street address" value=""></input>
+                </div>
+                <div class="form-group">
+                  <label for="new-city">City: </label>
+                  <input class="form-control new-city" placeholder="City name" type="text"></input>
+                </div>
+                <div class="form-group">
+                  <label for="new-state">State: </label>
+                  <input class="form-control new-state" placeholder="State name" type="text"></input>
+                </div>
+
+              </div><!-- end new-address -->
+            </div><!-- end new-addresses -->
+            <span class="btn btn-primary" id="add-address">New Address</span>
+            <button class="btn" type="submit">Submit</button>
+
+
+
+          </form><!-- End form -->
+
+          <div class="contact-list">
+            <h2>Contacts:</h2>
+            <ul id="contact-name">
+
+            </ul>
+          </div><!-- End contact-list class -->
+
+          </div><!--end of first col-->
+            <div id="contactDetails" class="col-md-6">
+              <h2></h2>
+              <p>Name: <span class="last-name"> </span>, <span class="first-name"> </span></p>
+              <p><dl id="addresses">
+              </dl></p>
+              <p><dl id="phoneEmail">
+              </dl></p>
+              <p><span class="btn btn-primary" id="add-info">Add Info</span></p>
+              <hr />
+              <form id="extraInfo">
+                <div class="form-group">
+                  <label for="new-workphone">Work Phone #: </label>
+                  <input class="form-control new-workphone" placeholder="(503)555-5555" type="text"></input>
+                </div>
+                <div class="form-group">
+                  <label for="new-mobilephone">Mobile Phone #: </label>
+                  <input class="form-control new-mobilephone" placeholder="(503)555-555" type="text"></input>
+                </div>
+                <div class="form-group">
+                  <label for="new-email">Email Address: </label>
+                  <input class="form-control new-email" placeholder="YourName@email.com" type="text"></input>
+                </div>
+              </form>
+
+              <!-- <p>Street: <span class="street"> </span></p>
+              <p>City: <span class="city"> </span></p>
+              <p>State: <span class="state"> </span></p> -->
+            </div><!-- End col-md-6-->
+      </div><!-- End row class -->
+    </div><!-- End container class -->
+  <body>
+</html>
